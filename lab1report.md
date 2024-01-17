@@ -10,7 +10,7 @@ a) cd
   1) ![Image](1st screenshot.png)
      
 
-     I was in the home directory. This command takes me to the home directory since there is no arguments. No there was no error. The reason there was no output or change was because I was already in the home directory so it didn't change anything.
+     I was in the home directory. This command takes me to the home directory since there is no arguments. No there was no error. <br>  The reason there was no output or change was because I was already in the home directory so it didn't change anything.
      
   2) ![Image](1b screenshot.png)
      
