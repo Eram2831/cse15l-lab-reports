@@ -10,13 +10,13 @@ a) cd
   1) ![Image](1st screenshot.png)
      
 
-     I was in the home directory.
+I was in the home directory.
 
-     This command takes me to the home directory since there is no arguments.
+This command takes me to the home directory since there is no arguments.
 
-     No there was no error.
+No there was no error.
 
-     The reason there was no output or change was because I was already in the home directory so it didn't change anything.
+The reason there was no output or change was because I was already in the home directory so it didn't change anything.
      
      
   3) ![Image](1b screenshot.png)
