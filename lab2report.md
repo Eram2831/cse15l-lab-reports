@@ -13,7 +13,7 @@ The methods that are called are the `getPath()`, `getQuery()`, `indexOf()`, `sub
 
 5) ![Image](key.png)
 
- In this screenshot it is showing the files that have the private key for logging into ieng6 computers. It is the authorized_keys.
+ In this screenshot it is showing the files that have the private key for logging into ieng6 computers. It is the authorized_keys files.
 
 6) ![Image](publickey.png)
 
