@@ -62,7 +62,7 @@ find "WE HAVE SOME PLANES" /v /c "911report\chapter-1.txt"
 ---------- 911REPORT\CHAPTER-1.TXT: 730
 ```
 
-In this command the /v is finding all the lines in the 911report\chapter-1.txt file that doesn't have the string: "WE HAVE SOME PLANES". Also, the /c is counting the lines given the string. So together this command is counting all the lines that don't have the phrase "WE HAVE SOME PLANES".
+In this command the /v is finding all the lines in the 911report\chapter-1.txt file that doesn't have the string: "WE HAVE SOME PLANES". It outputs all of th.
 
 b) 
 
@@ -75,26 +75,61 @@ find "WE HAVE SOME PLANES" /v /c "911report\chapter-2.txt"
 This time, it is counting all of the lines in the 911report\chapte-2.txt file that don't have the string: "WE HAVE SOME PLANES". Since this file doesn't contain this phrase, it just outputs number of all of the lines. 
 
 
-findstr /i /n "_____" "(file path)"
+findstr /i "_____" "(file path)"
 
 a) 
 
 ```
-findstr /i /n "money" "911report\chapter-2.txt"
-208:                the Kingdom and other states bordering the Persian Gulf in donating money to build
-627:            Bin Ladin also began to have serious money problems. International pressure on Sudan,
-635:            Money problems proved costly to Bin Ladin in other ways. Jamal Ahmed al Fadl, a
-644:                professed inability to provide him with money when his wife needed a caesarian
-789:                state-owned Ariana Airlines to courier money into the country.
-826:                tried to maintain, some autonomy. A looser circle of adherents might give money to
+findstr /i "weather" "911report\chapter-1.txt"
+For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
 ```
 
-In this command it is listing all of the lines (and line number) from the file 911report\chapter-2.txt that contains the string "money". By using the findstr command I am able to output the strings that contain the string "money". The command /i and /n finds the strings that have the word "money" and outputs the full line and the line number.
+In this command it is outputting all of the lines that have the string "weather" in it. The /i searches through the .txt file to find the string. The findstr allows us to output the strings.
 
 b) 
 
 ```
-findstr /i /n "eram" "911report\chapter-2.txt"
+findstr /i "eram" "911report\chapter-1.txt"
 ```
 
 This time, since "eram" is not in any of the lines in this file, it outputs nothing.  
+
+
+findstr /n "___" "(file path)"
+
+a)
+
+```
+findstr /n "weather" "911report\chapter-1.txt"
+8: For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+```
+
+In this command it finds the line where it has the string "weather" in the 911report\chapter-1.txt file. It outputs the string and the line number. 
+
+b) 
+
+```
+findstr /n "kevin" "911report\chapter-1.txt"
+```
+
+Since "kevin" is not in any of the lines in this file, it outputs nothing.  
+
+
+find "____" "(file path"
+
+a) 
+
+```
+findstr "weather" "911report\chapter-1.txt"
+For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+```
+
+In this command it prints the line that has the string "weather" in it. 
+
+b)
+
+```
+findstr "eram" "911report\chapter-1.txt"
+```
+
+It does not output anything since "eram" isn't in any of the lines in the file. 
