@@ -158,3 +158,7 @@ find -iname -type d "911Report"
 ```
 
 This time, I am doing the same thing but for directories. When doing -name "911Report" it doesn't show any output. However when doing -iname "911Report" it shows the directory with the name 911report no matter if it has a capital R or a lower case r. 
+
+
+I found all of the commands from this youtube video: https://www.youtube.com/watch?v=YdL13obmRow
+Creator: Colt Steele
