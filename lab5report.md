@@ -1,6 +1,6 @@
 part 1)
 
-a.
+a. A failure-inducing input for the buggy program, as a JUnit test and any associated code
 
 ```  
 int[] input2 = {1,2,3};
@@ -8,7 +8,7 @@ int[] input2 = {1,2,3};
     assertArrayEquals(new int[]{3,2,1}, input2);
 ```
 
-b. 
+b. An input that doesn't induce a failure, as a JUnit test and any associated code
 
 ```  
 int[] input1 = { 3 };
@@ -16,11 +16,11 @@ int[] input1 = { 3 };
     assertArrayEquals(new int[]{ 3 }, input1);
 ```
 
-c. 
+c. The symptom, as the output of running the tests
 
 ![Image](symptom.png)
 
-d.
+d. The bug, as the before-and-after code change required to fix it 
 
 before code:
 
