@@ -50,9 +50,10 @@ The after code works since the first code overwrites the original values before 
 
 part 2)
 
-find command
+less command
 
-find "____" /v /c "file path" 
+working directory: home
+find . -name "____" 
 
 a) 
 
