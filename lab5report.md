@@ -142,19 +142,19 @@ find -iname
 a) 
 
 ```
-find -name "Biomed"
-find -iname "Biomed"
-./docsearch/technical/biomed
+find -name "Chapter-1.txt"
+find -iname "Chapter-1.txt"
+./docsearch/technical/911report/chapter-1.txt
 ```
 
-This time, I am showing the output of find -name "Biomed" which has no output since there are no directories that are named Biomed. However when u do find -iname "Biomed" it outputs ./docsearch/technical/biomed since it is now case insensitive. This is useful because sometimes we could accidentally put a letter in capital on accident. 
+This time, I am showing the output of find -name "Chapter-1.txt" which has no output since there are no files that are named Chapter-1.txt. However when u do find -iname "Chapter-1.txt" it outputs ./docsearch/technical/911report/chapter-1.txt since it is now case insensitive. This is useful because sometimes we could accidentally put a letter in capital on accident. 
 
 b)
 
 ```
 find -name "911Report"
-find -iname "911Report"
+find -iname -type d "911Report"
 ./docsearch/technical/911report
 ```
 
-I am doing the same thing as last time but instead of the capital letter being in the beginning, it is at the middle. Even when the capital letter is at the middle, the -iname command still works as intended. 
+This time, I am doing the same thing but for directories. When doing -name "911Report" it doesn't show any output. However when doing -iname "911Report" it shows the directory with the name 911report no matter if it has a capital R or a lower case r. 
