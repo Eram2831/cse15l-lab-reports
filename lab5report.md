@@ -50,87 +50,111 @@ The after code works since the first code overwrites the original values before 
 
 part 2)
 
-less command
+find command
 
+find . -size 
+ 
+a) 
 working directory: home
-find . -name "____" 
-
-a) 
 
 ```
-find "WE HAVE SOME PLANES" /v /c "911report\chapter-1.txt"
+find . -size +1M
 
----------- 911REPORT\CHAPTER-1.TXT: 730
+./docsearch/.git/objects/pack/pack-3c507e52543aff4f852f6a72e1db9cdd79a486b8.pack
 ```
 
-In this command the /v is finding all the lines in the 911report\chapter-1.txt file that doesn't have the string: "WE HAVE SOME PLANES". It outputs all of th.
+In this command it ifnds all files that islarger than 1 megabyte. This is useful because it shows files that are too big or too small. 
 
 b) 
+working directory: ./technical
 
 ```
-find "WE HAVE SOME PLANES" /v /c "911report\chapter-2.txt"
-
----------- 911REPORT\CHAPTER-2.TXT: 948
+find ./docsearch -type d -size -2G
+./docsearch
+./docsearch/.git
+./docsearch/.git/branches
+./docsearch/.git/logs
+./docsearch/.git/logs/refs
+./docsearch/.git/logs/refs/heads
+./docsearch/.git/logs/refs/remotes
+./docsearch/.git/logs/refs/remotes/origin
+./docsearch/.git/objects
+./docsearch/.git/objects/pack
+./docsearch/.git/objects/info
+./docsearch/.git/info
+./docsearch/.git/hooks
+./docsearch/.git/refs
+./docsearch/.git/refs/heads
+./docsearch/.git/refs/remotes
+./docsearch/.git/refs/remotes/origin
+./docsearch/.git/refs/tags
+./docsearch/lib
+./docsearch/technical
 ```
 
-This time, it is counting all of the lines in the 911report\chapte-2.txt file that don't have the string: "WE HAVE SOME PLANES". Since this file doesn't contain this phrase, it just outputs number of all of the lines. 
+This time, showing all the directories that are less than 2 gigabytes. This is useful to find files that are too big or small. 
 
 
-findstr /i "_____" "(file path)"
+find -mmin 
 
 a) 
+working directory: ./docsearch/technical/911report
 
 ```
-findstr /i "weather" "911report\chapter-1.txt"
-For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+find . -mmin -3
+./chapter-1.txt
 ```
 
-In this command it is outputting all of the lines that have the string "weather" in it. The /i searches through the .txt file to find the string. The findstr allows us to output the strings.
+In this command it is outputting the file that was last modified in the last 3 min, I modified chapter-1.txt file a few minutes ago so it outputs chapter-1.txt. This is useful because it helps us identify files that were recently modified rather than looking through each file to locate the last file we modified. 
 
 b) 
+working directory: ./docsearch/technical
 
 ```
-findstr /i "eram" "911report\chapter-1.txt"
+find ./docsearch/technical -type d -mmin +1
+./docsearch/technical/911report
+./docsearch/technical/biomed
 ```
 
-This time, since "eram" is not in any of the lines in this file, it outputs nothing.  
+This time, it is showing all the directories that were modified more than 1 minute ago. Since the 911report and biomed directories were recently modified, they are the output. 
 
-
-findstr /n "___" "(file path)"
+find -exec
+working directory: home
 
 a)
 
 ```
-findstr /n "weather" "911report\chapter-1.txt"
-8: For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+find . -name "*chapter*" -exec rm '{}' ';'
 ```
 
-In this command it finds the line where it has the string "weather" in the 911report\chapter-1.txt file. It outputs the string and the line number. 
+In this command there is no output, instead it uses the -exec command and rm to delete all files that have "chapter" in it. This is useful so then you don't have to delete each file manually and instead altogether. 
 
 b) 
 
 ```
-findstr /n "kevin" "911report\chapter-1.txt"
+find ./docsearch/technical/biomed -type d -exec rm -r {} +
 ```
 
-Since "kevin" is not in any of the lines in this file, it outputs nothing.  
+This time I am doing it with a directory, I am deleting a whole directory using the -exec command and the rm. This is useful to get rid of a whole directory rather than locating it and deleting it manually. 
 
-
-find "____" "(file path"
+find -iname
 
 a) 
 
 ```
-findstr "weather" "911report\chapter-1.txt"
-For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+find -name "Biomed"
+find -iname "Biomed"
+./docsearch/technical/biomed
 ```
 
-In this command it prints the line that has the string "weather" in it. 
+This time, I am showing the output of find -name "Biomed" which has no output since there are no directories that are named Biomed. However when u do find -iname "Biomed" it outputs ./docsearch/technical/biomed since it is now case insensitive. This is useful because sometimes we could accidentally put a letter in capital on accident. 
 
 b)
 
 ```
-findstr "eram" "911report\chapter-1.txt"
+find -name "911Report"
+find -iname "911Report"
+./docsearch/technical/911report
 ```
 
-It does not output anything since "eram" isn't in any of the lines in the file. 
+I am doing the same thing as last time but instead of the capital letter being in the beginning, it is at the middle. Even when the capital letter is at the middle, the -iname command still works as intended. 
