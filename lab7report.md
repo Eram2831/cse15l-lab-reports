@@ -76,7 +76,7 @@ git<space>com<tab><space>-m “fixed” `<enter>`
 I commit the changes with a message "fix"`<enter>`
 
 
-git<space>push<space>or<tab><space>m<tab><enter>
+git`<space>`push`<space>`or`<tab><space>`m`<tab><enter>`
 
 
 I push the change into my github account. 
