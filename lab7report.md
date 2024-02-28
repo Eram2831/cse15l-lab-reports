@@ -59,7 +59,7 @@ I go into the vim for ListExamples.java and change the index1 to a index2.
  
 
 
-f) ![Image](vim6.png)
+e) ![Image](vim6.png)
 
 
 `<up arrow key>` `<up arrow key>` `<enter>`
@@ -67,7 +67,7 @@ f) ![Image](vim6.png)
 
 Since I did the bash test.sh command before, I press my up arrow key twice to go back to it. This shows that after making the changes the tests pass. 
 
-e) ![Image](vim7.png)
+f) ![Image](vim7.png)
 
 
 git `<space> `com `<tab><space>` -m “Fix” `<enter>`
