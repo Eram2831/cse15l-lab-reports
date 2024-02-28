@@ -2,7 +2,7 @@
 ![Image](vim3.png)
 
 
-`<up arrow key>``<enter>`
+`<up arrow key><enter>`
 
 Since I already logged into the ssh in the past, I used the up arrow key to go to my past actions and log in. 
 
@@ -13,7 +13,7 @@ Since I already logged into the ssh in the past, I used the up arrow key to go t
  cd <space> lab7<enter>
 
  
-git `<space>` clone `<space>` `<right click>` `<enter>`
+git `<space>` clone `<space> <right click> <enter>`
 
 I changed my directory into the lab7 folder and cloned the ssh url into it.
 
