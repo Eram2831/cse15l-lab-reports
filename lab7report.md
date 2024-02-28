@@ -73,13 +73,13 @@ Since I did the bash test.sh command before, I press my up arrow key twice to go
 ![Image](vim7.png)
 
 
-git<space>com<tab><space>-m “Fix” `<enter>`
+git `<space>com<tab><space>` -m “Fix” `<enter>`
 
 
 I commit the changes with a message "Fix"
 
 
-git`<space>`push`<space>`or`<tab><space>`m`<tab><enter>`
+git `<space>` push`<space>` or `<tab><space>` m `<tab><enter>`
 
 
 I push the change into my github account. 
