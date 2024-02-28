@@ -67,7 +67,6 @@ f) ![Image](vim6.png)
 
 Since I did the bash test.sh command before, I press my up arrow key twice to go back to it. This shows that after making the changes the tests pass. 
 
-
 e) ![Image](vim7.png)
 
 
