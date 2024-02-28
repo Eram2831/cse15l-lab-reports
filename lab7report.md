@@ -66,8 +66,7 @@ I go into the vim for ListExamples.java and change the index1 to a index2.
 Since I did the bash test.sh command before, I press my up arrow key twice to go back to it. This shows that after making the changes the tests pass. 
 
 
-
-![Image](vim3.png)
+![Image](vim7.png)
 
 
 git `<space>com<tab><space>` -m “Fix” `<enter>`
