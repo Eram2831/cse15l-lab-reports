@@ -21,7 +21,7 @@ I changed my directory into the lab7 folder and cloned the ssh url into it.
 ![Image](vim4.png)
 
 
-bash test.sh `<enter>`
+bash`<space>`test.sh `<enter>`
 
 
 This shows that the test does not pass before making changes. 
