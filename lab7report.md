@@ -11,6 +11,8 @@ Since I already logged into the ssh in the past, I used the up arrow key to go t
 
 
  cd <space> lab7<enter>
+
+ 
 git `<space>` clone `<space>` `<right click>` `<enter>`
 
 I changed my directory into the lab7 folder and cloned the ssh url into it.
@@ -29,12 +31,26 @@ This shows that the test does not pass before making changes.
 
 
 vim`<space>`ListExamples.java`<enter>`
+
+
 /1`<enter>`
+
+
 NN
+
+
 dw
+
+
 i
+
+
 2 `<space>`
+
+
 `<escape>`
+
+
 :wq`<enter>`
 
 
