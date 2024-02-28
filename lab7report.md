@@ -67,9 +67,6 @@ Since I did the bash test.sh command before, I press my up arrow key twice to go
 
 
 
-
-
-
 ![Image](vim7.png)
 
 
