@@ -56,7 +56,16 @@ i
 
 
 I go into the vim for ListExamples.java and change the index1 to a index2. 
+ 
 
+
+f) ![Image](vim6.png)
+
+
+<up arrow key> <up arrow key><enter>
+
+
+Since I did the bash test.sh command before, I press my up arrow key twice to go back to it. This shows that after making the changes the tests pass. 
 
 e) ![Image](vim7.png)
 
@@ -70,14 +79,4 @@ I commit the changes with a message "Fix"
 git `<space>` push`<space>` or `<tab><space>` m `<tab><enter>`
 
 
-I push the change into my github account. 
-
-
-f) ![Image](vim6.png)
-
-
-<up arrow key> <up arrow key><enter>
-
-
-Since I did the bash test.sh command before, I press my up arrow key twice to go back to it. This shows that after making the changes the tests pass. 
-
+I push the change into my github account.
