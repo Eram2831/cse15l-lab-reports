@@ -34,7 +34,8 @@ It worked! I checked out the link that you sent about interfaces and found that 
 
 All information needed about the setup: 
 
-Directory Structure: ![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/eb49fd86-513b-4e97-8ba5-7c4d39cd150c)
+Directory Structure: 
+![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/eb49fd86-513b-4e97-8ba5-7c4d39cd150c)
 
 
 The contents of each file before fixing the bug:
