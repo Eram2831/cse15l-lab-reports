@@ -42,4 +42,4 @@ Directory Structure: test-list-examples/TestListExamples.java
 
 $ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
 
-To fix the bug, you have to create a class that implements the StringChecker interface. Then you would have to go to lines 20 and 21 and switch the new StringChecker() on both lines to the name of the class, in this case IsMoon(). 
+To fix the bug, you have to create a class that implements the StringChecker interface. Then you would have to go to lines 20 and 21 and switch the `new StringChecker()` on both lines to the name of the class, in this case `IsMoon()`. 
