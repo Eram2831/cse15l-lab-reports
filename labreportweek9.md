@@ -32,7 +32,7 @@ student:
 It worked! I checked out the link that you sent about interfaces and found that I was trying to make an object of the StringChecker class even though it is a interface and not a class. So I created a `IsMoon()` class and created an object using that class. 
 
 
-All information need about the setup: 
+All information needed about the setup: 
 
 File: TestListExamples.java
 
