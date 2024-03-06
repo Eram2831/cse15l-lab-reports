@@ -37,6 +37,7 @@ All information needed about the setup:
 Directory Structure: ![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/eb49fd86-513b-4e97-8ba5-7c4d39cd150c)
 
 
+The contents of each file before fixing the bug:
 ![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/ff2ce4b2-6f92-4308-940f-b558d8b17e97)
 
 $ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
