@@ -32,3 +32,14 @@ student:
 It worked! I checked out the link that you sent about interfaces and found that I was trying to make an object of the StringChecker class even though it is a interface and not a class. So I created a `IsMoon()` class and created an object using that class. 
 
 
+All information need about the setup: 
+
+File: TestListExamples.java
+
+Directory Structure: test-list-examples/TestListExamples.java
+
+![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/ff2ce4b2-6f92-4308-940f-b558d8b17e97)
+
+$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+
+To fix the bug, you have to create a class that implements the StringChecker interface. Then you would have to go to lines 20 and 21 and switch the new StringChecker() on both lines to the name of the class, in this case IsMoon(). 
