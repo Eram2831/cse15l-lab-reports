@@ -44,3 +44,9 @@ The contents of each file before fixing the bug:
 $ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
 
 To fix the bug, you have to create a class that implements the StringChecker interface. Then you would have to go to lines 20 and 21 and switch the `new StringChecker()` on both lines to the name of the class, in this case `new IsMoon()`. 
+
+
+
+Part 2)
+
+During this second half of the quarter labs I learned many things, as someone who is a beginner coder much of the things we learned was the first time I ever heard them. One of the most notable things that I have learned in these past few labs is how to use vim to fix code by only using the terminal. I found that it was really cool that it is possible to do so much through only the terminal! However one thing that is weird to me is when would we use this in real life? Are there times when we aren't able to access a specific file? Or is vim best used during big projects when coding with many files and the fastest way to navigate and fix the code is through using vim? All in all, in this 2nd half of the quarter I learned a lot about the tools that are available to coders. 
