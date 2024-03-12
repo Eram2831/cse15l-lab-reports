@@ -10,7 +10,7 @@ Since I already logged into the ssh in the past, I used the up arrow key to go t
 b) ![Image](vim2.png)
 
 
- cd <space> lab7<enter>
+ cd`<space>`lab7`<enter>`
 
  
 git `<space>` clone `<space> <right click> <enter>`
