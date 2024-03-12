@@ -67,16 +67,18 @@ e) ![Image](vim6.png)
 
 Since I did the bash test.sh command before, I press my up arrow key twice to go back to it. This shows that after making the changes the tests pass. 
 
-f) ![Image](vim7.png)
+f) ![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/3662d038-10fd-4f5d-aca5-05607a9c99b4)
+![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/0c6891f4-01c0-4641-b253-f3cabc6666ea)
 
 
-git `<space> `com `<tab><space>` -m “Fix” `<enter>`
+git `<space>` ad `<tab>` List `<tab>` .java `<enter>`
+
+git `<space>` `<com>` `<tab>` -m `<space>` "fix bugs"
+
+I added the changes then I commit it with the message "fix bugs"
 
 
-I commit the changes with a message "Fix"
-
-
-git `<space>` push`<space>` or `<tab><space>` m `<tab><enter>`
+git `<space>` push`<space>` or `<tab>` m `<tab><enter>`
 
 
 I push the change into my github account.
