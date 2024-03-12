@@ -1,5 +1,5 @@
-a) ![Image](vim1.png)
-![Image](vim3.png)
+a) ![image](https://github.com/Eram2831/cse15l-lab-reports/assets/156246166/3c574dcc-628b-42e4-8925-80d586b06892)
+
 
 
 `<up arrow key><enter>`
